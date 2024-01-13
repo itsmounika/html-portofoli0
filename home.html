@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            .main{
+                text-align:center;
+                background-color: lightgreen;
+                vertical-align: middle;
+            }
+            .h{
+                background-image:url('./Un.jpg');
+                background-size:80%;
+            }
+            </style>
+            <script>
+                function f()
+                {
+                  document.getElementById("h").style.backgroundColor=red;
+                }
+            </script>
+    </head>
+    <frameset rows="25%,6%,80%">
+        <frame name="top" src="./top.html" scrolling="no" id="h" onfocus="f()"></frame>
+        <frameset cols="5%,5%,5%,5%" >
+            <frame src="./an.html" class="main" scrolling="auto" noresize></frame>
+            <frame src="./b.html" class="main" scrolling="no" noresize></frame>
+            <frame name="3" src="./re.html" class="main" scrolling="no" noresize></frame>
+            <frame name="4" src="./web.html" class="main"></frame>
+        </frameset>
+        <frameset colS="30%,70%">
+            <frame name="left" src="./uni.html" noresize></frame>
+            <frame name="right" class="h"></frame>
+        </frameset>
+    </frameset>
+</html>
